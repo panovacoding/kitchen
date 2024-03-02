@@ -1,0 +1,39 @@
+@mixin px($left, $right) {
+	padding-left: $left;
+	padding-right: $right;
+}
+
+@mixin py($top, $bottom) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+@mixin mx($left, $right) {
+	margin-left: $left;
+	margin-right: $right;
+}
+
+@mixin my($top, $bottom) {
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+@mixin pxa($var) {
+	padding-left: $var;
+	padding-right: $var;
+}
+
+@mixin pya($var) {
+	padding-top: $var;
+	padding-bottom: $var;
+}
+
+@mixin mxa($var) {
+	margin-left: $var;
+	margin-right: $var;
+}
+
+@mixin mya($var) {
+	margin-top: $var;
+	margin-bottom: $var;
+}

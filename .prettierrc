@@ -1,0 +1,9 @@
+{
+	"singleQuote": true,
+	"jsx-quotes": ["error", "double"],
+	"indent": false,
+	"tabWidth": 4,
+	"useTabs": true,
+	"semi": false,
+	"printWidth": 200
+}
