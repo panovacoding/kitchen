@@ -1,0 +1,42 @@
+@import 'common/mixins';
+@import 'common/screen';
+@import 'common/colors';
+
+.header {
+
+    position: absolute;
+    top: 29px;
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 63%;
+    }
+
+    &__main-link {
+        width: 172px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__contact-block {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__tel {
+        font-family: 'Montserrat', sans-serif;
+        color: $primary;
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+}

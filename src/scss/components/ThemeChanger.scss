@@ -1,0 +1,12 @@
+.theme-changer {
+    width: 25px;
+    height: 25px;
+    background: #2D2D2D;
+    border-radius: 100%;
+    border: none;
+
+    &__icon {
+        width: 12px;
+        height: 12px;
+    }
+}

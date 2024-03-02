@@ -1,3 +1,49 @@
+@import 'common/normalize';
 @import 'common/mixins';
 @import 'common/screen';
 @import 'common/colors';
+
+
+@import 'components/ThemeChanger';
+@import 'components/MenuButton';
+@import 'components/Button';
+
+
+@import 'sections/header';
+
+*, 
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    user-select: none;
+    object-fit: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    color: $primary;
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 210px;
+    margin: auto;
+}

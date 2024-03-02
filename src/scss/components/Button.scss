@@ -1,0 +1,53 @@
+.btn {
+    border: 2px solid;
+    padding: 17px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+
+    transition: all 0.2s;
+
+    &_transparent {
+        background: transparent;
+        color: $green;
+        border-color: $green;
+
+        &:hover {
+            background: $green;
+        }
+    }
+
+    &_dark {
+        background: $primary;
+        border-color: $primary;
+
+        &:hover {
+            background: $pink;
+            border-color: $pink;
+        }
+    }
+
+    &_pink {
+        background: $pink;
+        border-color: $pink;
+
+        &:hover {
+            background: $primary;
+            border-color: $primary;
+        }
+    }
+
+    &:hover {
+        color: #FFFFFF;
+    }
+
+    &:active, &:focus {
+        background: #000000;
+        color: #FFFFFF;
+    }
+}

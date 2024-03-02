@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link href="css/style.css" rel="stylesheet">
+
+	<title>@@title</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="/" class="header__main-link">
+					<img src="img/logo.webp" alt="VINTALIFE logo">
+				</a>
+				<div class="header__contact-block">
+					<a href="tel:+79628877751" class="header__tel">+7 (962) 88-777-51</a>
+					@@include('../components/Button.html', {
+						"type": "button", 
+						"class": "btn btn_transparent", 
+						"dialog": "callbackDialog",
+						"text": "Заказать обратный звонок"
+					})
+				</div>
+				<div class="header__controls">
+					@@include('../components/ThemeChanger.html')
+					@@include('../components/MenuButton.html')
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>

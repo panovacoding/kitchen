@@ -61,12 +61,15 @@ function serve() {
 
 	watch('src/**.html', series(html)).on('change', sync.reload)
 	watch('src/components/**.html', series(html)).on('change', sync.reload)
+	watch('src/sections/**.html', series(html)).on('change', sync.reload)
 	watch('src/js/**.js', series(js, libs)).on('change', sync.reload)
 	watch('src/fonts/**', series(fonts))
 	watch('src/libs/**', series(libs))
 	watch('src/img/**', series(img))
 	watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
 	watch('src/scss/common/**.scss', series(scss)).on('change', sync.reload)
+	watch('src/scss/sections/**.scss', series(scss)).on('change', sync.reload)
+	watch('src/scss/components/**.scss', series(scss)).on('change', sync.reload)
 }
 
 exports.build = series(
