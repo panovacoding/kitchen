@@ -1,0 +1,61 @@
+.hero {
+    padding: 235px 0 196px;
+    position: relative;
+
+    &__image-container {
+        position: absolute;
+        z-index: 2;
+
+        &_left {
+            top: 135px;
+            left: 0;
+            width: 25%;
+            max-width: 470px;
+        }
+
+        &_right {
+            top: 0;
+            right: 0;
+            width: 38%;
+        }
+    }
+
+    &__bg-decor {
+        width: 477px;
+        position: absolute;
+        top: 0;
+        right: 445px;
+    }
+}
+
+.hero-title {
+
+    max-width: 490px;
+    margin-left: 22%;
+
+    &__row {
+        font-family: 'SovMod', sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 115%;
+
+        &_transparent {
+            font-size: 70px;
+
+            @supports (-webkit-text-stroke: 2px black) {
+                  -webkit-text-stroke: 2px black;
+                  -webkit-text-fill-color: white;
+              }
+        }
+
+        &_centered {
+            text-align: center;
+        }
+
+        &_with-left-padding {
+            padding-left: 40px;
+        }
+    }
+
+}

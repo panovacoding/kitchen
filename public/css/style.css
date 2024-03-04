@@ -326,6 +326,8 @@ template {
 .menu-button {
   width: 36px;
   height: 36px;
+  background: transparent;
+  border: none;
 }
 .menu-button__icon {
   width: 100%;
@@ -385,6 +387,7 @@ template {
 
 .header {
   position: absolute;
+  z-index: 9;
   top: 29px;
   width: 100%;
 }
@@ -434,6 +437,59 @@ template {
       -ms-flex-align: center;
           align-items: center;
   gap: 13px;
+}
+
+.hero {
+  padding: 235px 0 196px;
+  position: relative;
+}
+.hero__image-container {
+  position: absolute;
+  z-index: 2;
+}
+.hero__image-container_left {
+  top: 135px;
+  left: 0;
+  width: 25%;
+  max-width: 470px;
+}
+.hero__image-container_right {
+  top: 0;
+  right: 0;
+  width: 38%;
+}
+.hero__bg-decor {
+  width: 477px;
+  position: absolute;
+  top: 0;
+  right: 445px;
+}
+
+.hero-title {
+  max-width: 490px;
+  margin-left: 22%;
+}
+.hero-title__row {
+  font-family: "SovMod", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 115%;
+}
+.hero-title__row_transparent {
+  font-size: 70px;
+}
+@supports (-webkit-text-stroke: 2px black) {
+  .hero-title__row_transparent {
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: white;
+  }
+}
+.hero-title__row_centered {
+  text-align: center;
+}
+.hero-title__row_with-left-padding {
+  padding-left: 40px;
 }
 
 *,
