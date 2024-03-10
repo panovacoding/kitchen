@@ -1,0 +1,33 @@
+.hero-title {
+
+    max-width: 490px;
+    margin-left: 22%;
+    position: relative;
+    z-index: 1;
+
+    &__row {
+        font-family: 'SovMod', sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 115%;
+
+        &_transparent {
+            font-size: 70px;
+
+            @supports (-webkit-text-stroke: 2px black) {
+                  -webkit-text-stroke: 2px black;
+                  -webkit-text-fill-color: white;
+              }
+        }
+
+        &_centered {
+            text-align: center;
+        }
+
+        &_with-left-padding {
+            padding-left: 40px;
+        }
+    }
+
+}

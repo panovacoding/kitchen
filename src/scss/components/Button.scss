@@ -25,6 +25,7 @@
     &_dark {
         background: $primary;
         border-color: $primary;
+        color: #FFFFFF;
 
         &:hover {
             background: $pink;
@@ -35,6 +36,7 @@
     &_pink {
         background: $pink;
         border-color: $pink;
+        color: #FFFFFF;
 
         &:hover {
             background: $primary;

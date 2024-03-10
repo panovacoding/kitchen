@@ -1,61 +1,104 @@
 .hero {
-    padding: 235px 0 196px;
+    padding: 235px 0 41px;
     position: relative;
 
     &__image-container {
         position: absolute;
         z-index: 2;
+        object-fit: cover;
 
         &_left {
             top: 135px;
             left: 0;
             width: 25%;
             max-width: 470px;
+            height: 529px;
         }
 
         &_right {
             top: 0;
             right: 0;
             width: 38%;
+            height: 799px;
         }
     }
 
     &__bg-decor {
         width: 477px;
         position: absolute;
-        top: 0;
-        right: 445px;
+        top: 80px;
+        right: 562px;
     }
+
+    &__buttons-container {
+        margin-left: 22%;
+        padding-left: 60px;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    &__buttons-container .btn {
+        min-width: 260px;
+        margin-top: 10px;
+    }
+
+    &__footer {
+        margin-top: 119px;
+        padding-right: 52px;
+        max-width: 65.3%;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__catalog-link {
+        color: $primary;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 105%;
+
+        padding-right: 57px;
+        position: relative;
+        transition: all 0.3s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 45px;
+            height: 2px;
+            background: $primary;
+            top: calc(50% - 1px);
+            right: 0;
+            transition: all 0.3s;
+        }
+    }
+
+    &__catalog-link:hover {
+        color: $pink;
+
+        &::after {
+            background: $pink;
+        }
+    }
+
 }
 
-.hero-title {
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-    max-width: 490px;
-    margin-left: 22%;
+.social {
+    display: flex;
+    width: 25px;
+    height: 25px;
 
-    &__row {
-        font-family: 'SovMod', sans-serif;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 115%;
-
-        &_transparent {
-            font-size: 70px;
-
-            @supports (-webkit-text-stroke: 2px black) {
-                  -webkit-text-stroke: 2px black;
-                  -webkit-text-fill-color: white;
-              }
-        }
-
-        &_centered {
-            text-align: center;
-        }
-
-        &_with-left-padding {
-            padding-left: 40px;
-        }
+    & svg {
+        width: 100%;
+        height: 100%;
     }
-
 }
